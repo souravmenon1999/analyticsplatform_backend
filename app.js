@@ -15,11 +15,11 @@ const app = express();
 
 
 app.use(morgan('dev'));
-app.use(sessionMid);
+app.use(sessionMid);  
 app.use(express.json());
 dotenv.config();
 app.use(cors({
-  origin: 'http://localhost:5173', // Replace with the URL of your frontend application
+  origin: process.env.FRONTEND_URL || 'http://localhost:5173', // Replace with the URL of your frontend application
   credentials: true // Allow credentials (cookies)
 }));
 
