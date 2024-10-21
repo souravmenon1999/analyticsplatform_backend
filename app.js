@@ -20,7 +20,7 @@ app.use(sessionMid);
 app.use(express.json());
 dotenv.config();
 app.use(cors({
-  origin:'https://analytics-dash-boad.vercel.app', // Replace with the URL of your frontend application
+  origin:process.env.FRONTEND_URL, // Replace with the URL of your frontend application
   credentials: true // Allow credentials (cookies)
 }));
 
