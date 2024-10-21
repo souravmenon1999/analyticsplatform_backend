@@ -3,10 +3,10 @@ import { connectDB } from './config/dbConfig.js';
 import morgan from 'morgan';
 import cors from 'cors';
 import dotenv from'dotenv';
-import session from 'express-session';
 import authRoute from './routes/authRoute.js';
 import dataRoute from './routes/dataRoute.js';
 import { sessionMid } from './config/sessionConfig.js';
+
 
 
 
