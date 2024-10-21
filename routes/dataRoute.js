@@ -5,6 +5,6 @@ import { fetchData } from '../controller/dataController.js';
 const router = express.Router();
 
 // Define the GET route for fetching data
-router.get('/',verifyUser,fetchData);
+router.get('/',fetchData);
 
 export default router;
